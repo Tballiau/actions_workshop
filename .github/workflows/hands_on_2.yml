@@ -1,5 +1,6 @@
 name: Lint Python Code
 
+on: [post]
 # Add the correct triggers for this workflow
 
 jobs:
