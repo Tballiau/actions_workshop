@@ -3,6 +3,7 @@ from weather_api import get_current_temperature
 
 def main():
     city = sys.argv[1]
+    print(city)
     try:
         temperature = get_current_temperature(city)
         print(f"The current temperature in {city} is: {temperature}°C")
