@@ -19,3 +19,11 @@ jobs:
 
       # Add steps that allow this workflow to run a linter on the Python code in the app directory
 
+      - name: install pylint
+        run: pip isntall pylint
+
+      - name: execute pylint on app directory
+        run: |
+          cd app
+          pylint *.py
+          echo "job done"
