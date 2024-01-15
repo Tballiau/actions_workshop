@@ -1,0 +1,16 @@
+name: Count line in python file
+
+# Add the correct triggers for this workflow
+
+jobs:
+  run_python_lintercount_line_in_python_file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: count line in python files
+        run: |
+          find . -name '*.py' | xargs wc -l
+
+
