@@ -7,6 +7,7 @@ on:
       city:
         description: 'input the city to check'
         required: true
+        default: 'brussels'
 
 jobs:
   print_temperature:
